@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipe/ingredientsection.dart';
 import 'package:foodrecipe/static_constants.dart';
+import 'package:foodrecipe/widgets/authorsection.dart';
 import 'package:foodrecipe/widgets/navbar.dart';
+import 'package:foodrecipe/widgets/ratingsection.dart';
+import 'package:foodrecipe/widgets/titleinfosection.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
