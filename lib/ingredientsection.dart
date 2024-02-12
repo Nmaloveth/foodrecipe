@@ -7,55 +7,61 @@ class Ingredients extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   TextTheme textTheme= Theme.of(context).textTheme;
+    TextTheme textTheme = Theme.of(context).textTheme;
 
     return Column(
       children: [
-         Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-               ConstantVariables.ingredientText,
+              ConstantVariables.ingredientText,
               style: textTheme.displayMedium,
             ),
             Text(
-               ConstantVariables.numberOfItems,
-              style: textTheme.bodySmall,)
+              ConstantVariables.numberOfItems,
+              style: textTheme.bodySmall,
+            )
           ],
         ),
         const SizedBox(
           height: 15,
         ),
         Ingredient(
-          image:   ConstantVariables.breadimg,
-          name:  ConstantVariables.bread,
-          weight:  ConstantVariables.weight,
+          image: ConstantVariables.milkimg,
+          name: ConstantVariables.bread,
+          weight: ConstantVariables.weight,
         ),
-      const  SizedBox(height: 15),
+        const SizedBox(height: 15),
         Ingredient(
-          image:   ConstantVariables.milkimg ,
-          name:   ConstantVariables.eggs,
-          weight:  ConstantVariables.weight,
+          image: ConstantVariables.breadimg,
+          name: ConstantVariables.eggs,
+          weight: ConstantVariables.weight,
         ),
-      const  SizedBox(height: 15),
+        const SizedBox(height: 15),
         Ingredient(
-          image:  ConstantVariables.breadimg,
-          name:  ConstantVariables.flour,
-          weight:  ConstantVariables.weight,
+          image: ConstantVariables.milkimg,
+          name: ConstantVariables.milk,
+          weight: ConstantVariables.weight,
         ),
-     const   SizedBox(height: 15),
+        const SizedBox(height: 15),
         Ingredient(
-          image:  ConstantVariables.milkimg ,
-          name:  ConstantVariables.honey,
-          weight:  ConstantVariables.weight,
+          image: ConstantVariables.milkimg,
+          name: ConstantVariables.honey,
+          weight: ConstantVariables.weight,
         ),
-       const SizedBox(height: 15),
+        const SizedBox(height: 15),
         Ingredient(
-          image:   ConstantVariables.breadimg,
-          name:   ConstantVariables.pepper,
-          weight:  ConstantVariables.weight,
+          image: ConstantVariables.breadimg,
+          name: ConstantVariables.pepper,
+          weight: ConstantVariables.weight,
         ),
-      const  SizedBox(height: 15),
+        Ingredient(
+          image: ConstantVariables.milkimg,
+          name: ConstantVariables.flour,
+          weight: ConstantVariables.weight,
+        ),
+        const SizedBox(height: 15),
       ],
     );
   }
